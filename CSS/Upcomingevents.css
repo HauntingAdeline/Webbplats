@@ -1,0 +1,58 @@
+body{
+    background-color: dimgrey;
+}
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p{
+    color: rgb(129, 12, 12);
+}
+
+
+
+.existence{
+    width: 400px;
+    
+}
+
+.speedway{
+    width: 400px;
+  
+}
+
+.loppis{
+    width: 400px;
+}
+
+.takeover{
+    width: 400px;
+}
+
+.shows{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.show {
+    display:flex;
+    line-height: 2,5;
+    align-items: center;
+    gap: 15px;
+}
+
+.shows {font-size: larger;}
+
+.location{
+    font-size: large;
+    line-height: 1.5;
+    font-weight: lighter;
+
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif    
+
+}
+.takeover{
+    border: 5px;
+    color: maroon;
+}
