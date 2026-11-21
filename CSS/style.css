@@ -1,6 +1,7 @@
 
 /*INDEX/HOMEPAGE*/
 
+/*attributes to align naviagtion section to center and change font*/
 nav {
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -14,7 +15,7 @@ body{
             background-color: dimgray;
         }
 
-
+/* margin attributes px to move ''Stockholm'' closer to ''Hardcore'' (h1) */
 #Stockholm{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 500%;
@@ -23,8 +24,10 @@ body{
     
 }
 
+/*Attributes for Hardcore header*/
+
 #Hardcore{
-    margin-left: 150px ;
+    margin-left: 150px ; /*moves ''Hardcore'' further from the left*/
     margin-top: 0;
     font-family: "UnifrakturMaguntia", cursive;
     font-size: 600%;
@@ -33,20 +36,24 @@ body{
 
 
 .Homepage {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: block; /* takes up width available width*/
+    margin-left: auto; /* automatically adjusts left margin*/
+    margin-right: auto; /* automatically adjusts right margin = centers picture */
 }
 
 
-h3{
-    font-weight: 300;
+h2{
+    font-weight: 300; /* makes text thicker or thinner*/
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 200%
-    
 }
 
-h4{
+#intro{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black; 
+}
+
+h3{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 150%;
     font-weight: 300;
@@ -60,21 +67,19 @@ font-weight: 400;}
 
 /*weekly recs*/
 
-
-#intro{
+/*center the intro, increase fontsize and increase margin*/
+#intro2 {
     text-align: center;
     font-size: 30px;
     margin-bottom: 50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: maroon;
 }
-    
-
+   
 
 h1{
     font-size: xx-large;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
 }
 
 h2{
@@ -83,76 +88,80 @@ h2{
     font-size: xx-large;
 }
 
-.intro{
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 50px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: maroon;
-}
+      
+      /*flex to arrange bubbles, placing bubbles vertically, spacing between bubbles,
+      set max width of bubble to 700px, automatically adjusts margins. */
 
 .recommendations{
-    display: flex;
+    display: flex; 
     flex-direction: column;
     gap: 25px;
     max-width: 700px;
     margin: auto;
 }
 
+/*make background beige, round corners, add 20px spacinng inside bubble, set bubble width  to 20px*/
 .bubble {
     background-color: beige;
-    border: 2px;
     border-radius: 30px;
     padding: 20px;
     width: 250px;
     font-size: 18px;
 }
-
+/*moves bubble to the left*/
 .bubble1 {
     margin-right: auto;
     
 }
+
+/*moves bubble to right*/
 .bubble2{
     margin-left: auto;
 }
 
+/*moves bubble to left*/
 .bubble3 {
     margin-right: auto;
 }
 
+/*change link color to blueviolet and make font thinner*/
 .bubble a {
     color: blueviolet;
-    font-weight: lighter
-    
-}
-.form-content {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    display: flex;
-    align-items: center;
-    gap: 30px;
+    font-weight: lighter  
 }
 
-.form-fields {
-    width: 60%;
+
+.form-content {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex; /*puts elements next to each other*/
+    flex-wrap: wrap; /*makes elements move to new line if not enough space*/
+    align-items: center; /*aligns elements vertically in the center*/
+    gap: 30px; /*adds 30px of spacing*/
+}
+
+.form-fields { /*takes up 60% of the available width*/
+    width: 60%; 
 }
 
 label {
-    display: block;
+    display: block; /*starts new line*/
     font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 8px;
+    margin-top: 20px; /*adds space above*/
+    margin-bottom: 8px; /*adds space below*/
 }
 
-input, textarea {
+input, textarea {  /*adds space inside, and a border of the box width, make the box beige, change font*/
     font-family: monospace;
+    font-size: 16px;
     width: 100%;
     padding: 12px;
     border: 2px;
     background-color: beige;
-    font-family: 16px;
     box-sizing: border-box;
 }
 
+/*make button red, add space inside button, change button font size and bold, 
+changes pointer to hand when hovering */
 button {
     background-color: darkred;
     border: 2px;
@@ -161,41 +170,26 @@ button {
     font-weight: bold;
     cursor: pointer;
 }
+/*change color of button when mouse points*/
 button:hover {
     background-color: beige;
     color: cadetblue;
 }
 
 
-/*Upcoming Events*/
+/*upcoming events*/
 
+/*change size of band poster events*/
 
+.existence, .speedway, .loppis, .takeover {
+    width: 300px;
 
-#intro2{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
 }
 
-.existence{
-    width: 400px;
-    
-}
-
-.speedway{
-    width: 400px;
-  
-}
-
-.loppis{
-    width: 400px;
-}
-
-.takeover{
-    width: 400px;
-}
-
-.shows{
-    display: grid;
+/*arrange band titles in rows and colums, change font*/
+.shows {
+    .shows {font-size: larger;}
+    display: grid; 
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
@@ -207,94 +201,38 @@ button:hover {
     gap: 15px;
 }
 
-.shows {
-    font-size: larger;
-}
-
-.location{
-    font-size: large;
-    font-weight: lighter;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif    
-
-}
-
-
-
-/*upcoming events*/
-
-.date{
+/*change date font, color*/
+.date {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: maroon;
 }
 
-.location{
+.location {
     font-size: large;
     line-height: 1.5;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif    
-
 }
-.existence{
-    width: 400px;
-    
-}
-
-.speedway{
-    width: 400px;
-  
-}
-
-.loppis{
-    width: 400px;
-}
-
-.takeover{
-    width: 400px;
-}
-
-.shows{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-}
-
-.show {
-    display:flex;
-    line-height: 2,5;
-    align-items: center;
-    gap: 15px;
-}
-
-.shows {font-size: larger;}
-
-
 
 
 /*Interviews*/
 
-
-#catint{
+/*change font, size of category: interview*/
+#catint {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 250%;
 }
 
-
-body {
-    background-color: dimgray;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 40px;
-    color: black;
-}
-
-
-
+/*set max width of interview section to 1100px and centers it horizontally*/
 .interviews {
     max-width: 1100px;
     margin: auto;
 }
 
-
+/*place image & text next to eachother, makes elements move to new line if not enough space, 
+align text at the top, create space inside box, add border and color to boxes*/
 .interview {
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     gap: 30px;
     padding: 30px;
@@ -303,17 +241,17 @@ body {
     background-color: #f5f2eb;
 }
 
-
+/*reverse order of elements, image and text switch sides*/
 .interview2 {
     flex-direction: row-reverse;
 }
-
-
 
 .interviewimage {
     flex: 0 0 40%;
 }
 
+/*fills image and video in the width of the border, sets image and vid so it doesnt stretch,
+ set height to 320px with a 30px red border*/
 .interviewimage img,
 .interviewimage video {
     width: 100%;
@@ -322,27 +260,49 @@ body {
     border: 3px solid #b52e36;
 }
 
-
+/*makes text box take up available space, makestext container shrink if screen is small*/
 .interviewtext {
     flex: 1;
     min-width: 0;
 }
 
+/*change font, size, color and letter spacing, remove spacing above*/
 .interviewtext h2 {
-    font-family: Impact, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
     color: #b52e36;
     margin-top: 0;
     letter-spacing: 1px;
 }
-
+/*change appereance of interview text*/
 .interviewtext p {
     font-size: 16px;
     line-height: 1.7;
     margin-bottom: 20px;
 }
-
-
+/*change color of phrases with strong attribute*/
 .interviewtext strong {
     color: #b52e36;
+}
+
+/* adjust interview layout for mobile screens */
+@media (max-width: 600px) {
+
+    .interview {
+        flex-direction: column;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .interviewimage {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    .interviewimage img,
+    .interviewimage video {
+        width: 100%;
+        height: auto;
+    }
+
 }
